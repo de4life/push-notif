@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13150A341C057A21A99CA503 /* Pods_push_notif.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D371B9B872BE32918C72F14F /* Pods_push_notif.framework */; };
 		724581702A459D520089AE8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7245816F2A459D520089AE8C /* AppDelegate.swift */; };
 		724581722A459D520089AE8C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724581712A459D520089AE8C /* SceneDelegate.swift */; };
 		724581742A459D520089AE8C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724581732A459D520089AE8C /* ViewController.swift */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		057707AE996C711CDD6E0526 /* Pods-push-notif.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-push-notif.debug.xcconfig"; path = "Target Support Files/Pods-push-notif/Pods-push-notif.debug.xcconfig"; sourceTree = "<group>"; };
+		3C4ABE0F3D357B5AEC14CD2D /* Pods-push-notif.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-push-notif.release.xcconfig"; path = "Target Support Files/Pods-push-notif/Pods-push-notif.release.xcconfig"; sourceTree = "<group>"; };
 		7245816C2A459D520089AE8C /* push-notif.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "push-notif.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7245816F2A459D520089AE8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		724581712A459D520089AE8C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 		7245817B2A459D570089AE8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7245817D2A459D570089AE8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		724581832A459DA00089AE8C /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		D371B9B872BE32918C72F14F /* Pods_push_notif.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_push_notif.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,18 +37,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13150A341C057A21A99CA503 /* Pods_push_notif.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0695CD5A2D6B37DA33B21748 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D371B9B872BE32918C72F14F /* Pods_push_notif.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3A7BB43DA82A3AC736CFB636 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				057707AE996C711CDD6E0526 /* Pods-push-notif.debug.xcconfig */,
+				3C4ABE0F3D357B5AEC14CD2D /* Pods-push-notif.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		724581632A459D4F0089AE8C = {
 			isa = PBXGroup;
 			children = (
 				724581832A459DA00089AE8C /* .gitignore */,
 				7245816E2A459D520089AE8C /* push-notif */,
 				7245816D2A459D520089AE8C /* Products */,
+				3A7BB43DA82A3AC736CFB636 /* Pods */,
+				0695CD5A2D6B37DA33B21748 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 724581802A459D570089AE8C /* Build configuration list for PBXNativeTarget "push-notif" */;
 			buildPhases = (
+				86094A15F5544C1B68105C39 /* [CP] Check Pods Manifest.lock */,
 				724581682A459D510089AE8C /* Sources */,
 				724581692A459D510089AE8C /* Frameworks */,
 				7245816A2A459D510089AE8C /* Resources */,
+				E9E659B005F7F51069B61D4A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,6 +163,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		86094A15F5544C1B68105C39 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-push-notif-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9E659B005F7F51069B61D4A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-push-notif/Pods-push-notif-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-push-notif/Pods-push-notif-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-push-notif/Pods-push-notif-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		724581682A459D510089AE8C /* Sources */ = {
@@ -286,6 +355,7 @@
 		};
 		724581812A459D570089AE8C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 057707AE996C711CDD6E0526 /* Pods-push-notif.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -314,6 +384,7 @@
 		};
 		724581822A459D570089AE8C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C4ABE0F3D357B5AEC14CD2D /* Pods-push-notif.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
